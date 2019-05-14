@@ -17,7 +17,7 @@ public class HomeController {
     @PostMapping("/songform")
     public String loadFromPage(@ModelAttribute Song song,
                                Model model) {
-        model.addAttribute("song", song);
+        model.addAttribute("songvar", song);
         return "confirmsong";
     }
 }
